@@ -50,17 +50,17 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <a href="index.html" class="logo me-auto"><h1 style="color: maroon;">La Salette</h1>
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.jpg" alt="logo"><h2 style="color: blue;">La Salette</h2> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
+      <h1 class="logo me-auto" ><img src="assets/img/logo.jpg" alt="logo"><a href="index.html" style="color: blue;">La Salette</a></h1>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto " href="#hero">Accueil</a></li>
           <li><a class="nav-link scrollto" href="#about">À propos</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#departments">Departements</a></li>
-          <li><a class="nav-link scrollto" href="#doctors">Docteur et Personnel</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#departments">Departements</a></li> -->
+          <li><a class="nav-link scrollto" href="#doctors">Personnel</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -100,8 +100,9 @@
         <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
           <div class="container">
             <h2>Bienvenue à l'hopital <span>La Salette Notre Dame</span></h2>
-            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
-            <a href="#about" class="btn-get-started scrollto">Read More</a>
+            <h3>CENTRE MEDICAL POLYVALENT</h3>
+            <p>Votre santé, notre souci.</p>
+            <a href="#about" class="btn-get-started scrollto">Lire Plus</a>
           </div>
         </div>
 
@@ -109,8 +110,9 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
           <div class="container">
             <h2>Bienvenue à l'hopital <span>La Salette Notre Dame</span></h2>
-            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
-            <a href="#about" class="btn-get-started scrollto">Read More</a>
+            <h3>CENTRE MEDICAL POLYVALENT</h3>
+            <p>Votre santé, notre souci.</p>
+            <a href="#about" class="btn-get-started scrollto">Lire Plus</a>
           </div>
         </div>
 
@@ -118,8 +120,9 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
           <div class="container">
             <h2>Bienvenue à l'hopital <span>La Salette Notre Dame</span></h2>
-            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
-            <a href="#about" class="btn-get-started scrollto">Read More</a>
+            <h3>CENTRE MEDICAL POLYVALENT</h3>
+            <p>Votre santé, notre souci.</p>
+            <a href="#about" class="btn-get-started scrollto">Lire Plus</a>
           </div>
         </div>
 
@@ -138,6 +141,51 @@
 
   <main id="main">
 
+
+
+ <!-- ======= Appointment Section ======= -->
+<!-- Google Calendar Appointment Scheduling begin -->
+<!-- Include the CSS file for the scheduling button -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+
+<!-- Define the new button -->
+
+<!-- Include the JavaScript file for the scheduling button -->
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
+<!-- Script to assign properties to the new button -->
+<script>
+(function() {
+  // Function to load scheduling functionality
+  var loadScheduling = function() {
+    // Load scheduling button properties
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3DdGAS2TiXtbvUBXkMBvk_ZjRNA5txxcnZ5706WcgpbkNxnaHHcJ_Vz8bxcjyRxLIAfN62mun_?gv=true',
+      color: '#039BE5',
+      label: 'Prendre Rendez-vous',
+   
+      target: document.getElementById('customButton') // Assign the properties to the new button
+    });
+  };
+
+  // Execute the loadScheduling function when the window is loaded
+  window.addEventListener('load', loadScheduling);
+})();
+</script>
+
+
+<!-- end Google Calendar Appointment Scheduling -->
+ <!-- End Appointment Section -->
+
+
+
+
+
+
+
+
+
+
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
@@ -145,33 +193,33 @@
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="fas fa-heartbeat"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i class="fas fa-scalpel"></i></div>
+              <h4 class="title"><a href="">Chirurgie</a></h4>
+              <p class="description">Traitement des conditions médicales nécessitant des interventions chirurgicales.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="fas fa-pills"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <div class="icon"><i class="fas fa-heartbeat"></i></div>
+              <h4 class="title"><a href="">Cardiologie</a></h4>
+              <p class="description">Diagnostic et gestion des maladies cardiovasculaires.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="fas fa-thermometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="fas fa-x-ray"></i></div>
+              <h4 class="title"><a href="">Radiologie</a></h4>
+              <p class="description">Imagerie médicale pour le diagnostic et le suivi des maladies.</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="fas fa-dna"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <div class="icon"><i class="fas fa-vials"></i></div>
+              <h4 class="title"><a href="">Examen de Laboratoire</a></h4>
+              <p class="description">Analyse des échantillons biologiques pour le diagnostic et le suivi médical.</p>
             </div>
           </div>
 
@@ -186,8 +234,7 @@
 
         <div class="text-center">
           <h3>En cas d'urgence? Besoin d'aide maintenant?</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn scrollto" href="#appointment">Prendre Rendez-vous</a>
+          <a  href="" id="customButton"></a>
         </div>
 
       </div>
@@ -199,28 +246,24 @@
 
         <div class="section-title">
           <h2>À propos de nous</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-right">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Hopital copy.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
+           
+            <!-- <ul>
               <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
               <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+            </ul> -->
+            <p style="font-size:large">
+              Située au cœur d'Emana Pont près des provenderies, le centre polyvalent Notre Dame La Salette est une formation sanitaire à capitaux privés dont l'existence remonte à 11 ans.</p>
+              <p style="font-size:large">              L'idée de création est née il y'a 15 ans au pied du Vercors situé à La Salette, région de France située entre Lyon et Grenoble. 
+              </p>
+             <p style="font-size:large"> Ce centre se veut moderne et est doté d'équipements de pointes pour une meilleure prise en charge des malades. Il est ouvert 7j/7 et 24h/24.
             </p>
           </div>
         </div>
@@ -239,7 +282,7 @@
               <i class="fas fa-user-md"></i>
               <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
 
-              <p><strong>Docteurs</strong></p>
+              <p><strong>Médecins</strong></p>
               
             </div>
           </div>
@@ -315,39 +358,102 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Nos services médicaux couvrent un large éventail de soins essentiels. Nous offrons des diagnostics avancés en imagerie, cardiologie, gynécologie, et échographie, ainsi que des interventions chirurgicales et orthopédiques. Nos services incluent aussi la diététique, l'hospitalisation, les examens de laboratoire, et la médecine de travail. La kinésithérapie, la gastro-entérologie, et les soins dentaires complètent notre offre. Chaque service est conçu pour assurer une prise en charge complète et spécialisée de vos besoins médicaux.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon"><i class="fas fa-heartbeat"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <div class="icon"><i class="fas fa-x-ray"></i></div>
+            <h4 class="title"><a href="">Radiologie</a></h4>
+            <p class="description">Imagerie médicale pour le diagnostic et le suivi des maladies.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon"><i class="fas fa-pills"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <div class="icon"><i class="fas fa-film"></i></div>
+            <h4 class="title"><a href="">Radiographie numérique</a></h4>
+            <p class="description">Imagerie avancée pour des diagnostics précis.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon"><i class="fas fa-hospital-user"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <div class="icon"><i class="fas fa-microscope"></i></div>
+            <h4 class="title"><a href="">Examens spéciaux</a></h4>
+            <p class="description">Tests diagnostiques avancés pour des évaluations détaillées. </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon"><i class="fas fa-dna"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <div class="icon"><i class="fas fa-heartbeat"></i></div>
+            <h4 class="title"><a href="">Cardiologie</a></h4>
+            <p class="description">Diagnostic et gestion des maladies cardiovasculaires. </p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon"><i class="fas fa-wheelchair"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            <div class="icon"><i class="fas fa-female"></i></div>
+            <h4 class="title"><a href="">Gynécologie</a></h4>
+            <p class="description">Soins de santé pour les femmes.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon"><i class="fas fa-notes-medical"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            <div class="icon"><i class="fas fa-scalpel"></i></div>
+            <h4 class="title"><a href="">Chirurgie</a></h4>
+            <p class="description">Traitement des conditions médicales nécessitant des interventions chirurgicales.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><i class="fas fa-wave-square"></i></div>
+            <h4 class="title"><a href="">Echographie</a></h4>
+            <p class="description">Imagerie par ultrasons pour le diagnostic médical. </p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><i class="fas fa-bone"></i></div>
+            <h4 class="title"><a href="">Orthopédie</a></h4>
+            <p class="description">Traitement des troubles du système musculo-squelettique. </p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon"><i class="fas fa-apple-alt"></i></div>
+            <h4 class="title"><a href="">Diététique</a></h4>
+            <p class="description">Conseils nutritionnels pour la santé et le bien-être.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><i class="fas fa-procedures"></i></div>
+            <h4 class="title"><a href="">Hospitalisation</a></h4>
+            <p class="description">Soins médicaux nécessitant un séjour à l'hôpital.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><i class="fas fa-user-injured"></i></div>
+            <h4 class="title"><a href="">Intervention chirurgicale</a></h4>
+            <p class="description">Procédures chirurgicales pour traiter les maladies.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><i class="fas fa-stethoscope"></i></div>
+            <h4 class="title"><a href="">Exploration fonctionelle</a></h4>
+            <p class="description">Évaluation des fonctions physiologiques.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon">i class="fas fa-vials"></i></div>
+            <h4 class="title"><a href="">Examen laboratoire</a></h4>
+            <p class="description">Analyse des échantillons biologiques pour le diagnostic médical.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><i class="fas fa-briefcase-medical"></i></div>
+            <h4 class="title"><a href="">Médecine de travail</a></h4>
+            <p class="description">Soins de santé liés au travail et à l'ergonomie.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><i class="fas fa-tooth"></i></div>
+            <h4 class="title"><a href="">Soins dentaires</a></h4>
+            <p class="description">Traitements pour la santé bucco-dentaire.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><i class="fas fa-hands-helping"></i></div>
+            <h4 class="title"><a href="">Kinésithérapie</a></h4>
+            <p class="description">Rééducation physique pour la récupération fonctionnelle.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon"><i class="fas fa-stomach"></i></div>
+            <h4 class="title"><a href="">Gastro-entérologie</a></h4>
+            <p class="description">Diagnostic et traitement des troubles digestifs.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><i class="fas fa-band-aid"></i></div>
+            <h4 class="title"><a href="">Salle de plâtre</a></h4>
+            <p class="description">Application de plâtres pour les fractures et les blessures.</p>
           </div>
         </div>
 
@@ -360,7 +466,6 @@
 
         <div class="section-title">
           <h2>Prendre Rendez-vous</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
@@ -412,7 +517,7 @@
     </section><!-- End Appointment Section -->
 
     <!-- ======= Departments Section ======= -->
-    <section id="departments" class="departments">
+    <!-- <section id="departments" class="departments">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -480,7 +585,7 @@
         </div>
 
       </div>
-    </section><!-- End Departments Section -->
+    </section>End Departments Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -488,7 +593,7 @@
 
         <div class="section-title">
           <h2>Témoignages</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -498,16 +603,19 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  Je suis un jeune boulanger d’une entreprise de la place.J'ai connu le docteur dans le cadre d’un accident de travail. Elle est médecin dans notre entreprise.
+                  J'ai eu le bras droit cassé.
+                  Je ne pouvais plus bouger ni me servir de ce membre.
+                  Le médecin m’a fait une radio qui a confirmé le diagnostic puis elle m’a opéré.
+                  Les douleurs ont disparu et je peux à nouveau me servir de mon bras.                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <img src="assets/img/testimonials/testimonials-1.jpg" style="opacity: 0;" class="testimonial-img" alt="">
+                <!-- <h3>Prénom Nom</h3> -->
+                <h4>Boulanger</h4>
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -518,9 +626,9 @@
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -531,33 +639,10 @@
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
+            
 
           </div>
           <div class="swiper-pagination"></div>
@@ -571,8 +656,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Docteur et Personnel</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Personnel</h2>
         </div>
 
         <div class="row">
@@ -580,7 +664,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
               <div class="member-img">
-                <img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/doctors/doctors-1.jpg" style="opacity: 0;" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -589,13 +673,13 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Medical Officer</span>
+                <h4>Kenfack Roselyne</h4>
+                <span>Médecin</span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
                 <img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt="">
@@ -611,43 +695,11 @@
                 <span>Anesthesiologist</span>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Cardiology</span>
-              </div>
-            </div>
-          </div>
+          
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Neurosurgeon</span>
-              </div>
-            </div>
-          </div>
+          
 
         </div>
 
@@ -660,7 +712,7 @@
 
         <div class="section-title">
           <h2>Galerie</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Quelques images de notre matériel.</p>
         </div>
 
         <div class="gallery-slider swiper">
@@ -849,7 +901,6 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
       </div>
@@ -870,20 +921,21 @@
                   <i class="bx bx-map"></i>
                   <h3>Addresse</h3>
                   <p>Pont Emana, Yaoundé</p>
+                  <p>B.P: 16503</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-envelope"></i>
                   <h3>Envoyez-nous un email</h3>
-                  <p>info@example.com<br>contact@example.com</p>
+                  <p>roselynekenfack@gmail.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-phone-call"></i>
                   <h3>Appelez nous</h3>
-                  <p>+237 690 653 106<br>+237 000 000 000</p>
+                  <p>+237 690 653 106</p>
                 </div>
               </div>
             </div>
@@ -935,7 +987,7 @@
                 Pont Emana <br>
                 Yaoundé, Cameroon<br><br>
                 <strong>Téléphone:</strong> +237 690 653 106<br>
-                <strong>Email:</strong> info@example.com<br>
+                <strong>Email:</strong> roselynekenfack@gmail.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -1006,6 +1058,12 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
+
+
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
