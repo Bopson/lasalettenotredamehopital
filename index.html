@@ -117,7 +117,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg )">
           <div class="container">
             <h2>Bienvenue à l'hopital <span>La Salette Notre Dame</span></h2>
             <h3>CENTRE MEDICAL POLYVALENT</h3>
@@ -608,14 +608,15 @@
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
+              <div class="testimonial-item" onclick="showModal()">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Je suis un jeune boulanger d’une entreprise de la place.J'ai connu le docteur dans le cadre d’un accident de travail. Elle est médecin dans notre entreprise.
+                  Je suis un jeune boulanger d’une entreprise de la place. J'ai connu le docteur dans le cadre d’un accident de travail. Elle est médecin dans notre entreprise.
                   J'ai eu le bras droit cassé.
                   Je ne pouvais plus bouger ni me servir de ce membre.
                   Le médecin m’a fait une radio qui a confirmé le diagnostic puis elle m’a opéré.
-                  Les douleurs ont disparu et je peux à nouveau me servir de mon bras.                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  Les douleurs ont disparu et je peux à nouveau me servir de mon bras.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-1.jpg" style="opacity: 0;" class="testimonial-img" alt="">
                 <h3>Mr. NGONO Etaba</h3>
@@ -623,6 +624,53 @@
                 <h4>Traumatisme(suite à une agression)</h4>
               </div>
             </div><!-- End testimonial item -->
+            
+            <!-- Modal Structure -->
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-body">
+                  <div class="modal-item">
+                    <img src="assets/img/Radio avant-bras.jpeg" alt="Image 1">
+                    <h4>Radio après l'opération</h4>
+                    <p> Traumatisme suite à une aggression</p>
+                  </div>
+                  <!-- <div class="modal-item">
+                    <img src="assets/img/testimonials/image2.jpg" alt="Image 2">
+                    <h4>Image Title 2</h4>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <!-- <div class="swiper-slide">
               <div class="testimonial-item">
@@ -1077,6 +1125,25 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function showModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+// Close the modal when the user clicks anywhere outside of the modal content
+window.onclick = function(event) {
+  var modal = document.getElementById("myModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+  </script>
 
 </body>
 
