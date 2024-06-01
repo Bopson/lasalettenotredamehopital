@@ -1851,10 +1851,83 @@ section {
 }
 
 .modal-item {
+  flex: 1; /* Each item will take up equal space */   
+   margin: 0 10px; /* Adds margin on the left and right sides of each item */
   text-align: center;
 }
 
 .modal-item img {
-  max-width: 100%;
-  height: auto;
+  width: 100%; /* Ensure the image scales to the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 200px; /* Set a max width to control size */
+  max-height: 200px; /* Set a max height to control size */
+  object-fit: cover; /* Cover the entire container without distortion */
+}
+
+
+/* image as icon resizing */
+
+
+.icon-box2 {
+  text-align: center; /* Center align the content inside the icon-box */
+}
+
+.icon2 {
+  width: 100px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  display: flex; /* Use flexbox to center the image */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px; /* Center the icon and add space below it */
+  border-radius: 50%; /* Make the container circular */
+  overflow: hidden; /* Ensure the image fits within the circular container */
+  background-color: #f0f0f0; /* Optional: Add a background color */
+}
+
+.icon2 img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Ensure the image maintains the container's aspect ratio */
+  object-fit: cover; /* Cover the entire container without distorting the image */
+}
+
+
+
+
+
+
+
+
+
+
+.visitor-counter {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.visitor-counter h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #007bff;
+  flex: 1 100%;
+}
+
+.visitor-counter p {
+  margin: 0;
+  font-size: 32px;
+  color: #000000;
+  background: linear-gradient(to bottom, #e0e0e0, #ffffff, #e0e0e0);
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+  flex: 1;
 }
